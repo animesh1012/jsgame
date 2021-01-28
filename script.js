@@ -81,6 +81,8 @@ newB.addEventListener('click', function () {
   holdScore = [0, 0];
   score0.textContent = 0;
   score1.textContent = 0;
+  document.querySelector('.player--0').classList.remove('player--winner');
+  document.querySelector('.player--1').classList.remove('player--winner');
   document.getElementById(`current--0`).textContent = 0;
   document.getElementById(`current--1`).textContent = 0;
 });
